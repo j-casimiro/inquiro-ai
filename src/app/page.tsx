@@ -21,8 +21,43 @@ export default function Home() {
           </nav>
         </aside>
         <section className="w-3/4 p-8">
-          <h1 className="text-2xl font-bold mb-4">Main Content</h1>
-          {/* Add your main content here */}
+          <div className="flex flex-1 flex-col h-full">
+            {/* Chat messages */}
+            <div className="flex flex-col space-y-4 w-full mb-6 flex-1 overflow-y-auto">
+              {/* User message bubble */}
+              <div className="flex justify-end">
+                <div className="max-w-xs bg-neutral-900 text-white rounded-lg px-4 py-2 shadow-md">
+                  Hi there! How can I help you today?
+                </div>
+              </div>
+              {/* Bot message bubble */}
+              <div className="flex justify-start">
+                <div className="max-w-xs bg-gray-200 text-gray-900 rounded-lg px-4 py-2 shadow-md">
+                  Hello! I have a question about your services.
+                </div>
+              </div>
+              {/* User message bubble */}
+              <div className="flex justify-end">
+                <div className="max-w-xs bg-neutral-900 text-white rounded-lg px-4 py-2 shadow-md">
+                  Sure, feel free to ask me anything.
+                </div>
+              </div>
+            </div>
+            {/* Chat input area */}
+            <form className="flex items-center space-x-2 w-full">
+              <input
+                type="text"
+                placeholder="Type your message..."
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-400"
+              />
+              <button
+                type="submit"
+                className="px-4 py-2 bg-neutral-900 text-white rounded-md hover:bg-neutral-700 transition"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </section>
       </main>
 

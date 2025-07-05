@@ -12,15 +12,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex flex-1 flex-row bg-white rounded-lg shadow-lg mx-8 my-6 overflow-hidden">
-        <aside className="w-1/4 bg-gray-100 p-6 border-r border-gray-200">
-          <nav>
-            <ul className="space-y-4">
-              <li className="font-semibold text-gray-700">Sidebar</li>
-              {/* Add more sidebar items here if needed */}
-            </ul>
-          </nav>
-        </aside>
-        <section className="w-3/4 p-8">
+        <section className="w-full p-8">
           <div className="flex flex-1 flex-col h-full">
             {/* Chat messages */}
             <div className="flex flex-col space-y-4 w-full mb-6 flex-1 overflow-y-auto">
